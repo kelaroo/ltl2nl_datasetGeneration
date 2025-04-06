@@ -1,0 +1,22 @@
+[
+    {
+        "ltl": ["Fy", "FGy"],
+        "nlp": ["move to y", "stop at y", "visit y", "navigate to y"]
+    },
+    {
+        "ltl": ["F(y1&&Fy2)"],
+        "nlp": ["move to y1 then to y2", "go to y1 before stopping at y2", "go to y2 by visiting y1 along the way", "go to y1 then go to y2", "go to y1 before going to y2"]
+    },
+    {
+        "ltl": ["F(y1&&F(y2&&Fy3))"],
+        "nlp": ["go to y1 then go to y2 and then go to y3"]
+    },
+    {
+        "ltl": ["Fy1||Fy2", "F (y1 || y2)"],
+        "nlp": ["go to y1 or go to y2", "visit y1 or visit y2", "eventually visit y1 or eventually visit y2"]
+    },
+    {
+        "ltl": ["F(y3&&F(y1||y2))"],
+        "nlp": ["go to y3 and then  visit y1 or y2"]
+    }
+]
