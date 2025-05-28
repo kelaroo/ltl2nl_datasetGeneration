@@ -16,3 +16,4 @@ def create_prompt(entry: dict) -> str:
     nlp = "NL: " + "\nNL: ".join(entry["nlp"])
 
     return PROMPT.replace("<ltl>", ltl).replace("<nl>", nlp)
+
